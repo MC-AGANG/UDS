@@ -24,8 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
@@ -33,48 +31,42 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 12
-        Me.ListBox1.Location = New System.Drawing.Point(42, 111)
+        Me.ListBox1.Location = New System.Drawing.Point(6, 20)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(398, 124)
+        Me.ListBox1.Size = New System.Drawing.Size(409, 124)
         Me.ListBox1.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(40, 86)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(29, 12)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "事件"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(40, 61)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(77, 12)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "拷贝到路径："
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(123, 58)
+        Me.TextBox1.Location = New System.Drawing.Point(49, 20)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(249, 21)
+        Me.TextBox1.Size = New System.Drawing.Size(207, 21)
         Me.TextBox1.TabIndex = 3
-        Me.TextBox1.Text = "D:\AGANG\UDC\"
+        Me.TextBox1.Text = "D:\AGANG\UDS\"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(378, 58)
+        Me.Button1.Location = New System.Drawing.Point(264, 20)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(62, 21)
+        Me.Button1.Size = New System.Drawing.Size(60, 21)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "浏览..."
         Me.Button1.UseVisualStyleBackColor = True
@@ -89,7 +81,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(210, 248)
+        Me.Button2.Location = New System.Drawing.Point(206, 278)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(81, 23)
         Me.Button2.TabIndex = 5
@@ -98,7 +90,7 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(339, 248)
+        Me.Button3.Location = New System.Drawing.Point(332, 278)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(86, 23)
         Me.Button3.TabIndex = 6
@@ -107,36 +99,133 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(65, 249)
+        Me.Button4.Location = New System.Drawing.Point(63, 278)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(78, 22)
         Me.Button4.TabIndex = 7
         Me.Button4.Text = "关于"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.CheckBox2)
+        Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Location = New System.Drawing.Point(31, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(330, 72)
+        Me.GroupBox1.TabIndex = 8
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "设置"
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Enabled = False
+        Me.CheckBox2.Location = New System.Drawing.Point(118, 47)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(72, 16)
+        Me.CheckBox2.TabIndex = 7
+        Me.CheckBox2.Text = "分开储存"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Checked = True
+        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox1.Location = New System.Drawing.Point(16, 47)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(96, 16)
+        Me.CheckBox1.TabIndex = 6
+        Me.CheckBox1.Text = "覆盖原有文件"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(14, 24)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(29, 12)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "路径"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Button5)
+        Me.GroupBox2.Controls.Add(Me.ListBox1)
+        Me.GroupBox2.Location = New System.Drawing.Point(31, 90)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(421, 182)
+        Me.GroupBox2.TabIndex = 9
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "事件"
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(355, 150)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(60, 25)
+        Me.Button5.TabIndex = 1
+        Me.Button5.Text = "清空"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Button7)
+        Me.GroupBox3.Controls.Add(Me.Button6)
+        Me.GroupBox3.Location = New System.Drawing.Point(367, 12)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(85, 72)
+        Me.GroupBox3.TabIndex = 10
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "控制"
+        '
+        'Button7
+        '
+        Me.Button7.Enabled = False
+        Me.Button7.Location = New System.Drawing.Point(8, 20)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(71, 21)
+        Me.Button7.TabIndex = 1
+        Me.Button7.Text = "停止"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(6, 47)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(73, 21)
+        Me.Button6.TabIndex = 0
+        Me.Button6.Text = "启动"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(497, 283)
+        Me.ClientSize = New System.Drawing.Size(483, 313)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ListBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "UDS"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox3.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
@@ -144,4 +233,13 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Button5 As Button
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label1 As Label
 End Class
