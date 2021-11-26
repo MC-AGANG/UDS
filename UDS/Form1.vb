@@ -54,10 +54,6 @@ Public Class Form1
                 Case DBT_DEVICEQUERYREMOVEFAILED
                 Case DBT_DEVICEREMOVECOMPLETE 'U盘卸载 
                     INSERT = False
-                    Try
-                        xc1.Abort()
-                    Catch
-                    End Try
                     ListBox1.Items.Add(TimeString + "  U盘已拔出")
                 Case DBT_DEVICEREMOVEPENDING
                 Case DBT_DEVICETYPESPECIFIC
@@ -152,11 +148,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Visible = False
-        NotifyIcon1.Visible = True
-        ListBox1.Items.Add(TimeString + "  隐藏窗口")
-    End Sub
+
 
     Private Sub NotifyIcon1_Click(sender As Object, e As EventArgs) Handles NotifyIcon1.Click
         Me.Visible = True
@@ -266,4 +258,16 @@ Public Class Form1
         writer.Close()
         writer = Nothing
     End Function
+
+    Private Sub 彻底隐藏_Click(sender As Object, e As EventArgs) Handles 彻底隐藏.Click
+        Me.Visible = False
+        MsgBox("若要退出程序，请前往任务管理器")
+    End Sub
+
+    Private Sub Button2_MouseClick(sender As Object, e As MouseEventArgs) Handles Button2.MouseClick
+
+        NotifyIcon1.Visible = True
+        ListBox1.Items.Add(TimeString + "  隐藏窗口")
+    End Sub
+
 End Class

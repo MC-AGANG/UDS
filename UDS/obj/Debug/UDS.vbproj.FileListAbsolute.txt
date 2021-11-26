@@ -10,3 +10,15 @@ C:\Users\AGANG\source\repos\UDS\UDS\obj\Debug\UDS.vbproj.CoreCompileInputs.cache
 C:\Users\AGANG\source\repos\UDS\UDS\obj\Debug\UDS.exe
 C:\Users\AGANG\source\repos\UDS\UDS\obj\Debug\UDS.xml
 C:\Users\AGANG\source\repos\UDS\UDS\obj\Debug\UDS.pdb
+F:\U\UDS\UDS\bin\Debug\UDS.exe.config
+F:\U\UDS\UDS\bin\Debug\UDS.exe
+F:\U\UDS\UDS\bin\Debug\UDS.pdb
+F:\U\UDS\UDS\bin\Debug\UDS.xml
+F:\U\UDS\UDS\obj\Debug\UDS.vbproj.AssemblyReference.cache
+F:\U\UDS\UDS\obj\Debug\UDS.Form1.resources
+F:\U\UDS\UDS\obj\Debug\UDS.Resources.resources
+F:\U\UDS\UDS\obj\Debug\UDS.vbproj.GenerateResource.cache
+F:\U\UDS\UDS\obj\Debug\UDS.vbproj.CoreCompileInputs.cache
+F:\U\UDS\UDS\obj\Debug\UDS.exe
+F:\U\UDS\UDS\obj\Debug\UDS.xml
+F:\U\UDS\UDS\obj\Debug\UDS.pdb

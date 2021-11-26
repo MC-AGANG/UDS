@@ -40,6 +40,7 @@ Partial Class Form1
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.彻底隐藏 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -81,7 +82,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(206, 278)
+        Me.Button2.Location = New System.Drawing.Point(158, 278)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(81, 23)
         Me.Button2.TabIndex = 5
@@ -202,11 +203,21 @@ Partial Class Form1
         Me.Button6.Text = "启动"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        '彻底隐藏
+        '
+        Me.彻底隐藏.Location = New System.Drawing.Point(245, 277)
+        Me.彻底隐藏.Name = "彻底隐藏"
+        Me.彻底隐藏.Size = New System.Drawing.Size(81, 23)
+        Me.彻底隐藏.TabIndex = 11
+        Me.彻底隐藏.Text = "彻底隐藏"
+        Me.彻底隐藏.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(483, 313)
+        Me.Controls.Add(Me.彻底隐藏)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -242,4 +253,5 @@ Partial Class Form1
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents 彻底隐藏 As Button
 End Class
